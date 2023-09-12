@@ -1,35 +1,45 @@
 .invoice{
-    background-color: antiquewhite;
+    /* background-color: antiquewhite;
     height: 100vh;
+    display: flex;
+   width: 100vw; */
+   background-color: rgb(216, 197, 197);
+   height: 100vh;
+   display: flex;
+   justify-content: center; /* Horizontally center content */
+   align-items: center; /* Vertically center content */
+  
+
 }
 .wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+     
+
 }
+
 .table{
     border: 1px solid grey;
-    height: 25rem;
-    width: 55rem;
+    height: max-content;
+    
     display: flex;
     flex-direction: column;
 }
 .firstrow{
     display: flex;
-    border: 1px solid;
+
     height: 5rem;
 
 }
 .firstcolumn{
     flex: 1;
-    border: 1px solid;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .secondcolumn{
     flex: 1;
-    border: 1px solid;
+
 }
 .selectcontainer{
     width: 100%;
@@ -42,10 +52,16 @@
 .srfirstcolumn{
     flex: 1;
     display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 55px;
 }
 .srsecondcolumn{
     flex: 1;
     display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
 }
 .srcolumn1{
     flex: 1;
@@ -56,6 +72,10 @@
 input{
     width: 100%;
     height: 100%;
+    border: 1px solid lightgray;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px; /* Add some padding for input fields */
 }
 .srcolumn3{
     flex: 1;
@@ -90,4 +110,36 @@ flex: 1;
 }
 .frseventh{
     flex: 1;
+}
+.srfirstcolumn{
+    display: flex;
+    
+}
+
+  @media screen and (max-width: 768px) {
+
+    .secondrow{
+flex-direction: column;
+align-items: flex-start;
+
+    }
+    .srsecondcolumn{
+     width: 100%;
+     
+    }
+    .srfirstcolumn{
+        width: 100%;
+    }
+  
+}
+
+.helo1{
+    flex:1;
+}
+.helo2{
+    display: flex;
+}
+select{
+    border-radius: 5px;
+
 }

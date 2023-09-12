@@ -1,0 +1,93 @@
+.invoice{
+    background-color: antiquewhite;
+    height: 100vh;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.table{
+    border: 1px solid grey;
+    height: 25rem;
+    width: 55rem;
+    display: flex;
+    flex-direction: column;
+}
+.firstrow{
+    display: flex;
+    border: 1px solid;
+    height: 5rem;
+
+}
+.firstcolumn{
+    flex: 1;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.secondcolumn{
+    flex: 1;
+    border: 1px solid;
+}
+.selectcontainer{
+    width: 100%;
+    height: 100%;
+}
+.secondrow{
+    display: flex;
+    align-items: center;
+}
+.srfirstcolumn{
+    flex: 1;
+    display: flex;
+}
+.srsecondcolumn{
+    flex: 1;
+    display: flex;
+}
+.srcolumn1{
+    flex: 1;
+}
+.srcolumn2{
+    flex: 2;
+}
+input{
+    width: 100%;
+    height: 100%;
+}
+.srcolumn3{
+    flex: 1;
+}
+.srcolumn4{
+    flex: 2;
+}
+.thirdrow{
+   border: 1px solid;
+   height: 25px;
+}
+.fourthrow{
+    display: flex;
+}
+.frfirst{
+flex: 1;
+}
+.frsecond{
+    flex: 1;
+}
+.frthird{
+    flex: 1;
+}
+.frfourth{
+    flex: 1;
+}
+.frfifth{
+    flex: 1;
+}
+.frsixth{
+    flex: 1;
+}
+.frseventh{
+    flex: 1;
+}

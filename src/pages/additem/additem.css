@@ -1,0 +1,46 @@
+.addItems2 {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* min-height: 100vh; */
+    background-color: #ffffff;
+    width: 100%;
+  }
+  
+  .itemContainer1{
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  

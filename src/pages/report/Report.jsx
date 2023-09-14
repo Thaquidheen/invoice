@@ -18,6 +18,31 @@ const Report = () => {
     }
   ]);
 
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // You can handle form submission here, for example, by sending data to a server or performing some other action.
+    console.log('Form data submitted:', formData);
+  };
+
+
+  const [selectedDate, setSelectedDate] = useState(null);
+
+
   return (
     <div className="reportcontainer">
        <h1 className='heading shadow'>Reports</h1>
@@ -55,8 +80,50 @@ const Report = () => {
     <a href="#">Item 3</a>
   </div>
 </div>
+  
+<div className='mt-5'>
+
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="name">Date</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        /><br /><br />
+
+        <label htmlFor="email">Item</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        /><br /><br />
+         <label htmlFor="email">Customer</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        /><br /><br />
+
+
+        
+
+        <button type="submit">Show Summary</button>
+      </form>
+    </div>
+
+
 
      </div>
+     
   </div>
 
   )

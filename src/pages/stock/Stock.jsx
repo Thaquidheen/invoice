@@ -1,13 +1,18 @@
 import React from 'react'
 import './stock.css';
+
+import { Link } from 'react-router-dom'; 
+
 const Stock = () => {
   return (
     <div className="stock">
         <div className="container">
             <div className="">
                 <div className="stockItems">
-                    <h1 className='text-center headingstock shadow'>Add Item</h1>
-                    <div className="addItems">
+                  <Link to='/additem'><button>Add Item</button></Link>
+               
+                    {/* <h1 className='text-center headingstock shadow'>Add Item</h1> */}
+                    {/* <div className="addItems">
                     <table>
                 <thead>
                   <tr>
@@ -40,7 +45,7 @@ const Stock = () => {
                 </tbody>
               </table>
               <button >Add Item</button>
-                    </div>
+                    </div> */}
                   
                     <div className="addtoStock">
                     <h1 className='text-center mt-5 headingstock shadow'>Add To Stock</h1>

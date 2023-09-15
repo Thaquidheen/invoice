@@ -8,7 +8,9 @@ const Invoice = () => {
                <table className="table ">
     <thead>
         <tr className="firstrow">
-            <th className="firstcolumn">Customer Name</th>
+            <th className="firstcolumn">
+            <input  type="text" />
+            </th>
             <th className="secondcolumn">
                 <select className="selectcontainer">
                     <option value="option1">Option 1</option>
@@ -87,6 +89,8 @@ const Invoice = () => {
                 </tr>
     </tbody>
 </table>
+
+<button className=''>Generate Invoice</button>
 
             </div>
   

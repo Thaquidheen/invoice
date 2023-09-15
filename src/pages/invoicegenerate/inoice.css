@@ -3,7 +3,7 @@
     height: 100vh;
     display: flex;
    width: 100vw; */
-   background-color: rgb(216, 197, 197);
+   background-color: rgb(56, 39, 39);
    height: 100vh;
    display: flex;
    justify-content: center; /* Horizontally center content */
@@ -32,10 +32,13 @@
 }
 .firstcolumn{
     flex: 1;
-
+  
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.firstcolumn>input{
+ margin-top: 15px;
 }
 .secondcolumn{
     flex: 1;
@@ -56,6 +59,9 @@
     gap: 10px;
     height: 55px;
 }
+.srfirstcolumn>input{
+    height: 100%;
+}
 .srsecondcolumn{
     flex: 1;
     display: flex;
@@ -75,14 +81,16 @@ input{
     border: 1px solid lightgray;
     outline: none;
     border-radius: 5px;
-    padding: 5px; /* Add some padding for input fields */
+    padding: 5px;
 }
 .srcolumn3{
     flex: 1;
+    height: 100%;
 }
 .srcolumn4{
     flex: 2;
 }
+
 .thirdrow{
    border: 1px solid;
    height: 25px;
